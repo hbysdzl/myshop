@@ -1,0 +1,2484 @@
+[ 2018-05-11T08:49:38+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.042002s ]
+SQL: SELECT `goods_id`,`goods_name`,`promote_price`,`logo` FROM `php2018_goods` WHERE ( `is_promote` = 1 ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `promote_start_time` < 1525999778 ) AND ( `promote_end_time` > 1525999778 ) ORDER BY sort_num  [ RunTime:0.023001s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`logo` FROM `php2018_goods` WHERE ( `is_hot` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_on_sale` = 1 ) ORDER BY sort_num  [ RunTime:0.001001s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`logo` FROM `php2018_goods` WHERE ( `is_best` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_on_sale` = 1 ) ORDER BY sort_num  [ RunTime:0.001000s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`logo` FROM `php2018_goods` WHERE ( `is_new` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_on_sale` = 1 ) ORDER BY sort_num  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goodscategory` [ RunTime:0.026001s ]
+SQL: SELECT * FROM `php2018_goodscategory` WHERE ( parent_id=20 )  [ RunTime:0.009001s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`logo` FROM `php2018_goods` WHERE ( `is_best` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_on_sale` = 1 ) AND ( `cat_id` IN ('13','21','22','23','25','26','27','28','29','30','31') ) ORDER BY sort_num  [ RunTime:0.017001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goodscategory` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `php2018_goodscategory`  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.162009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.162009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.026002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.026002s ]
+
+[ 2018-05-11T08:49:39+08:00 ] 127.0.0.1 /index.php/Home/Goods/ajaxgetRecentlygoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.006000s ]
+SQL: SELECT `goods_id`,`goods_name`,`sm_logo` FROM `php2018_goods` WHERE ( `goods_id` IN ('75','74') )  [ RunTime:0.010001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-05-11T08:49:39+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2018-05-11T08:49:41+08:00 ] 127.0.0.1 /index.php/Home/Cart/CartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `php2018_cart` [ RunTime:0.029001s ]
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2018-05-11T08:49:41+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2018-05-11T08:49:43+08:00 ] 127.0.0.1 /index.php/Home/Order/OrderList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+
+[ 2018-05-11T08:49:46+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-05-11T08:49:48+08:00 ] 127.0.0.1 /index.php/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-11T08:49:48+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T08:49:48+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T08:50:00+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-05-11T08:50:01+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T08:50:01+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-11T08:50:02+08:00 ] 127.0.0.1 /index.php/Home/Member/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-11T08:50:07+08:00 ] 127.0.0.1 /index.php/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Model\MemberModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\UPUPW_NP5.4\htdocs\pcshop\Application\Home\Model\MemberModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `php2018_member` [ RunTime:0.028001s ]
+SQL: SELECT * FROM `php2018_member` WHERE ( `email` = 'itduan@sina.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_number_level` [ RunTime:0.017001s ]
+SQL: SELECT `level_id`,`rate` FROM `php2018_number_level` WHERE ( 0 between bottom_num and top_num ) LIMIT 1   [ RunTime:0.017001s ]
+SQL: SHOW COLUMNS FROM `php2018_cart` [ RunTime:0.003001s ]
+
+[ 2018-05-11T08:50:08+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.003000s ]
+SQL: SELECT `goods_id`,`goods_name`,`promote_price`,`logo` FROM `php2018_goods` WHERE ( `is_promote` = 1 ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `promote_start_time` < 1525999808 ) AND ( `promote_end_time` > 1525999808 ) ORDER BY sort_num  [ RunTime:0.001000s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`logo` FROM `php2018_goods` WHERE ( `is_hot` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_on_sale` = 1 ) ORDER BY sort_num  [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`logo` FROM `php2018_goods` WHERE ( `is_best` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_on_sale` = 1 ) ORDER BY sort_num  [ RunTime:0.001000s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`logo` FROM `php2018_goods` WHERE ( `is_new` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_on_sale` = 1 ) ORDER BY sort_num  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goodscategory` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `php2018_goodscategory` WHERE ( parent_id=20 )  [ RunTime:0.000000s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`logo` FROM `php2018_goods` WHERE ( `is_best` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_on_sale` = 1 ) AND ( `cat_id` IN ('13','21','22','23','25','26','27','28','29','30','31') ) ORDER BY sort_num  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goodscategory` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `php2018_goodscategory`  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [8] Undefined index: children D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 159 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T08:50:08+08:00 ] 127.0.0.1 /index.php/Home/Goods/ajaxgetRecentlygoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.004000s ]
+SQL: SELECT `goods_id`,`goods_name`,`sm_logo` FROM `php2018_goods` WHERE ( `goods_id` IN ('75','74') )  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T08:50:08+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxChkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T08:50:20+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-05-11T08:50:20+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T08:50:20+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T08:50:27+08:00 ] 127.0.0.1 /index.php/Admin/Login/chkcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-11T08:50:36+08:00 ] 127.0.0.1 /index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `php2018_admin` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `php2018_admin` WHERE ( `username` = 'root' ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2018-05-11T08:50:36+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T08:50:36+08:00 ] 127.0.0.1 /index.php/Admin/Index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T08:50:36+08:00 ] 127.0.0.1 /index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Index/footer.html): failed to open stream: No such file or directory D:\UPUPW_NP5.4\htdocs\pcshop\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T08:50:36+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `php2018_privilege` [ RunTime:0.039002s ]
+SQL: SELECT * FROM `php2018_privilege`  [ RunTime:0.009001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T08:50:38+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="lst" [ RunTime:0.025002s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) D:\UPUPW_NP5.4\htdocs\pcshop\Application\Admin\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.004000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php2018_goods a WHERE ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.033002s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php2018_goods a LEFT JOIN php2018_goods_number as b ON a.goods_id=b.goods_id  WHERE ( `is_delete` = 0 ) GROUP BY a.goods_id ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.067004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-05-11T08:50:39+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.002000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.046003s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-05-11T08:57:58+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="lst" [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) D:\UPUPW_NP5.4\htdocs\pcshop\Application\Admin\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.007000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php2018_goods a WHERE ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php2018_goods a LEFT JOIN php2018_goods_number as b ON a.goods_id=b.goods_id  WHERE ( `is_delete` = 0 ) GROUP BY a.goods_id ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.007000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.135008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2018-05-11T08:58:00+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.002000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.001001s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T08:58:03+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/73.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=73 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=73 ORDER BY a.attr_id [ RunTime:0.000000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=73 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T08:58:06+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/71.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=71 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=71 ORDER BY a.attr_id [ RunTime:0.001000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=71 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T08:58:10+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/72.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=72 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=72 ORDER BY a.attr_id [ RunTime:0.001000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=72 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T08:58:15+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/72.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.004000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=72 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=72 ORDER BY a.attr_id [ RunTime:0.000000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=72 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 65 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:05:27+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.002000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.001000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:09:21+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-05-11T09:09:21+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `php2018_privilege` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `php2018_privilege`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:09:21+08:00 ] 127.0.0.1 /index.php/Admin/Index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:09:21+08:00 ] 127.0.0.1 /index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Index/footer.html): failed to open stream: No such file or directory D:\UPUPW_NP5.4\htdocs\pcshop\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:09:23+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="lst" [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) D:\UPUPW_NP5.4\htdocs\pcshop\Application\Admin\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php2018_goods a WHERE ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php2018_goods a LEFT JOIN php2018_goods_number as b ON a.goods_id=b.goods_id  WHERE ( `is_delete` = 0 ) GROUP BY a.goods_id ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-11T09:09:24+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.007000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.001001s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-11T09:09:56+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:09:56+08:00 ] 127.0.0.1 /index.php/Admin/Index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:09:56+08:00 ] 127.0.0.1 /index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Index/footer.html): failed to open stream: No such file or directory D:\UPUPW_NP5.4\htdocs\pcshop\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:09:56+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `php2018_privilege` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `php2018_privilege`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:09:58+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="lst" [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) D:\UPUPW_NP5.4\htdocs\pcshop\Application\Admin\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.004001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php2018_goods a WHERE ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php2018_goods a LEFT JOIN php2018_goods_number as b ON a.goods_id=b.goods_id  WHERE ( `is_delete` = 0 ) GROUP BY a.goods_id ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:09:59+08:00 ] 127.0.0.1 /index.php/Admin/Goods/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="add" [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php2018_goodscategory` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `php2018_goodscategory`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goodsbrand` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `php2018_goodsbrand`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php2018_number_level` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `php2018_number_level`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goodstype` [ RunTime:0.019001s ]
+SQL: SELECT * FROM `php2018_goodstype`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:10:00+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="lst" [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) ./Application/Admin/Model/GoodsModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php2018_goods a WHERE ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php2018_goods a LEFT JOIN php2018_goods_number as b ON a.goods_id=b.goods_id  WHERE ( `is_delete` = 0 ) GROUP BY a.goods_id ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:10:02+08:00 ] 127.0.0.1 /index.php/Admin/Goodstype/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goodstype" and action_name="lst" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goodstype` [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php2018_goodstype a LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM php2018_goodstype a GROUP BY a.type_id LIMIT 0,5   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:10:03+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="lst" [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) D:\UPUPW_NP5.4\htdocs\pcshop\Application\Admin\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php2018_goods a WHERE ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php2018_goods a LEFT JOIN php2018_goods_number as b ON a.goods_id=b.goods_id  WHERE ( `is_delete` = 0 ) GROUP BY a.goods_id ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:10:04+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.001000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-11T09:11:37+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:11:38+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `php2018_privilege` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `php2018_privilege`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:11:38+08:00 ] 127.0.0.1 /index.php/Admin/Index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-11T09:11:38+08:00 ] 127.0.0.1 /index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Index/footer.html): failed to open stream: No such file or directory D:\UPUPW_NP5.4\htdocs\pcshop\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-05-11T09:11:39+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="lst" [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) D:\UPUPW_NP5.4\htdocs\pcshop\Application\Admin\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php2018_goods a WHERE ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php2018_goods a LEFT JOIN php2018_goods_number as b ON a.goods_id=b.goods_id  WHERE ( `is_delete` = 0 ) GROUP BY a.goods_id ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:11:40+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.002000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.000000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:12:32+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:12:32+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `php2018_privilege` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `php2018_privilege`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:12:32+08:00 ] 127.0.0.1 /index.php/Admin/Index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:12:32+08:00 ] 127.0.0.1 /index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Index/footer.html): failed to open stream: No such file or directory D:\UPUPW_NP5.4\htdocs\pcshop\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:12:34+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="lst" [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) D:\UPUPW_NP5.4\htdocs\pcshop\Application\Admin\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.004001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php2018_goods a WHERE ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php2018_goods a LEFT JOIN php2018_goods_number as b ON a.goods_id=b.goods_id  WHERE ( `is_delete` = 0 ) GROUP BY a.goods_id ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:12:35+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/74.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=74 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=74 ORDER BY a.attr_id [ RunTime:0.000000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=74 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:12:56+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-05-11T09:12:56+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `php2018_privilege` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `php2018_privilege`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:12:56+08:00 ] 127.0.0.1 /index.php/Admin/Index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:12:56+08:00 ] 127.0.0.1 /index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Index/footer.html): failed to open stream: No such file or directory D:\UPUPW_NP5.4\htdocs\pcshop\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:12:57+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="lst" [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) D:\UPUPW_NP5.4\htdocs\pcshop\Application\Admin\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php2018_goods a WHERE ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php2018_goods a LEFT JOIN php2018_goods_number as b ON a.goods_id=b.goods_id  WHERE ( `is_delete` = 0 ) GROUP BY a.goods_id ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-05-11T09:12:58+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.000000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:15:27+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: UPDATE `php2018_goods_number` SET `goods_id`=75,`goods_number`=0,`goods_attr_id`=',,' WHERE ( goods_attr_id=,, ) [ RunTime:0.035002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ', )' at line 1
+ [ SQL语句 ] : UPDATE `php2018_goods_number` SET `goods_id`=75,`goods_number`=0,`goods_attr_id`=',,' WHERE ( goods_attr_id=,, )
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:15:28+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.001000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:17:33+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-05-11T09:17:33+08:00 ] 127.0.0.1 /index.php/Admin/Index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:17:33+08:00 ] 127.0.0.1 /index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Index/footer.html): failed to open stream: No such file or directory D:\UPUPW_NP5.4\htdocs\pcshop\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:17:33+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `php2018_privilege` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `php2018_privilege`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:17:35+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="lst" [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) D:\UPUPW_NP5.4\htdocs\pcshop\Application\Admin\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php2018_goods a WHERE ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php2018_goods a LEFT JOIN php2018_goods_number as b ON a.goods_id=b.goods_id  WHERE ( `is_delete` = 0 ) GROUP BY a.goods_id ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:17:37+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.002001s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.001000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:20:07+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:20:07+08:00 ] 127.0.0.1 /index.php/Admin/Index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:20:07+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `php2018_privilege` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `php2018_privilege`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:20:07+08:00 ] 127.0.0.1 /index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Index/footer.html): failed to open stream: No such file or directory D:\UPUPW_NP5.4\htdocs\pcshop\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:21:24+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="lst" [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) D:\UPUPW_NP5.4\htdocs\pcshop\Application\Admin\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.003001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php2018_goods a WHERE ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php2018_goods a LEFT JOIN php2018_goods_number as b ON a.goods_id=b.goods_id  WHERE ( `is_delete` = 0 ) GROUP BY a.goods_id ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:21:25+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.001000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 66 行.
+NOTIC: [8] Undefined variable: v0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Runtime\Cache\Admin\929e32e02a582776f00040e3abbc2d0d.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-11T09:25:38+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.002000s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\UPUPW_NP5.4\htdocs\pcshop\Application\Admin\Controller\GoodsController.class.php 第 212 行.
+SQL: INSERT INTO `php2018_goods_number` (`goods_id`,`goods_number`,`goods_attr_id`,`id`) VALUES (75,50,'182,185,189',0) [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:25:39+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.000000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:26:40+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: UPDATE `php2018_goods_number` SET `goods_id`=75,`goods_number`=60,`goods_attr_id`='182,185,189' WHERE ( `id` = 4 ) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-11T09:26:41+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.000000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-05-11T09:27:01+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: UPDATE `php2018_goods_number` SET `goods_id`=75,`goods_number`=20,`goods_attr_id`='182,185,189' WHERE ( `id` = 4 ) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:27:02+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.001001s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:27:17+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.004001s ]
+SQL: UPDATE `php2018_goods_number` SET `goods_id`=75,`goods_number`=20,`goods_attr_id`='182,185,189' WHERE ( `id` = 4 ) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:27:18+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003001s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.001000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:29:26+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:29:26+08:00 ] 127.0.0.1 /index.php/Admin/Index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-11T09:29:27+08:00 ] 127.0.0.1 /index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Index/footer.html): failed to open stream: No such file or directory D:\UPUPW_NP5.4\htdocs\pcshop\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:29:27+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `php2018_privilege` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `php2018_privilege`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-05-11T09:29:27+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="lst" [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) ./Application/Admin/Model/GoodsModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php2018_goods a WHERE ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php2018_goods a LEFT JOIN php2018_goods_number as b ON a.goods_id=b.goods_id  WHERE ( `is_delete` = 0 ) GROUP BY a.goods_id ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-11T09:29:29+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.005000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.001001s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2018-05-11T09:29:36+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: UPDATE `php2018_goods_number` SET `goods_id`=75,`goods_number`=20,`goods_attr_id`='182,185,189' WHERE ( `id` = 4 ) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:29:38+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.001000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:34:19+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:34:20+08:00 ] 127.0.0.1 /index.php/Admin/Index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:34:20+08:00 ] 127.0.0.1 /index.php/Admin/Index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `php2018_privilege` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `php2018_privilege`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:34:20+08:00 ] 127.0.0.1 /index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Index/footer.html): failed to open stream: No such file or directory D:\UPUPW_NP5.4\htdocs\pcshop\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-05-11T09:34:21+08:00 ] 127.0.0.1 /index.php/Admin/Goods/lst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="lst" [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_update() should be compatible with Think\Model::_after_update($data, $options) ./Application/Admin/Model/GoodsModel.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM php2018_goods a WHERE ( `is_delete` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT a.*,IFNULL(SUM(b.goods_number),0) gn FROM php2018_goods a LEFT JOIN php2018_goods_number as b ON a.goods_id=b.goods_id  WHERE ( `is_delete` = 0 ) GROUP BY a.goods_id ORDER BY addtime desc LIMIT 0,5   [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-11T09:34:22+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003001s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.000000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:34:29+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+
+[ 2018-05-11T09:35:15+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003001s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.001000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:35:18+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: UPDATE `php2018_goods_number` SET `goods_id`=75,`goods_number`=20,`goods_attr_id`='182,185,189' WHERE ( `id` = 4 ) [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:35:19+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.002000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.001000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-11T09:36:42+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.003000s ]
+SQL: UPDATE `php2018_goods_number` SET `goods_id`=75,`goods_number`=50,`goods_attr_id`='182,185,189' WHERE ( `id` = 4 ) [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-05-11T09:36:43+08:00 ] 127.0.0.1 /index.php/Admin/Goods/goodsNumber/goods_id/75.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: select count(*) has from php2018_privilege where module_name="Admin" and controller_name="Goods" and action_name="goodsNumber" [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `php2018_goods_number` [ RunTime:0.002000s ]
+SQL: SELECT a.* , b.attr_name from php2018_goods_attr as a LEFT JOIN php2018_goodsattribute as b on a.attr_id=b.attr_id 
+            WHERE a.attr_id in(SELECT attr_id from php2018_goods_attr WHERE goods_id=75 GROUP BY attr_id HAVING COUNT(*)>1) and a.goods_id=75 ORDER BY a.attr_id [ RunTime:0.001000s ]
+SQL: SELECT * FROM `php2018_goods_number` WHERE ( goods_id=75 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
