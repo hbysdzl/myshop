@@ -37,20 +37,16 @@ class MemberController extends BackController{
     public function regist(){
 
             if(IS_POST){//提交表单
-               /* var_dump(I('post.'));
+                /*var_dump(I('post.'));
                 die();*/
                $model=D('Member');
                if($model->create(I('post.'),1)){
                    if ($model->add()){
-
-                       $this->success('恭喜您！注册成功，请登录邮箱完成验证');
+                       $this->ajaxReturn(array('status'=>'1'));
                        die();
                     }
-
                 }
-
-                $this->error($model->getError());
-
+                $this->ajaxReturn(array('status'=>0,'error'=>$model->getError()));
             }
 
         //设置页面基本信息
@@ -84,14 +80,15 @@ class MemberController extends BackController{
                    $returl=session('returnUrl');
                     if($returl){
                         session('returnUrl',null);
-                        redirect($returl);
+                        $this->ajaxReturn(array('status'=>2,'url'=>$returl));
                     }else {
-                        redirect('/');
+                        $this->ajaxReturn(array('status'=>1));
                     }
 
                 }
             }
-            $this->error($model->getError());
+            //$this->error($model->getError());
+            $this->ajaxReturn(array('status'=>0,'error'=>$model->getError()));
         }
 
         //设置页面基本信息

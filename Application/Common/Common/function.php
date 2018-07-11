@@ -4,7 +4,7 @@ use Behavior\ShowPageTraceBehavior;
 
 //发送邮件
 function sendMail($to, $title, $content){
-    require_once ('./Public/PHPMailer_v5.1/class.phpmailer.php');
+    require_once ('./Api/PHPMailer_v5.1/class.phpmailer.php');
     $mail = new PHPMailer();
     // 设置为要发邮件
     $mail->IsSMTP();
@@ -15,10 +15,10 @@ function sendMail($to, $title, $content){
     $mail->CharSet='UTF-8';
     /*  邮件服务器上的账号是什么 */
     $mail->From='hbdzlaa@163.com';
-    $mail->FromName='我的商城';
+    $mail->FromName='我的商城';         //发件人的昵称
     $mail->Host='smtp.163.com';
-    $mail->Username='hbdzlaa@163.com';
-    $mail->Password='duanzonglai123';
+    $mail->Username='hbdzlaa@163.com'; //邮箱名
+    $mail->Password='duanzonglai123';  //第三方客户端授权码
     // 发邮件端口号默认25
     $mail->Port = 25;
     // 收件人

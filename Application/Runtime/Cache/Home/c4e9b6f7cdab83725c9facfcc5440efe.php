@@ -17,8 +17,9 @@
 	<link rel="stylesheet" href="/Public/Home/style/bottomnav.css" type="text/css">
 	<link rel="stylesheet" href="/Public/Home/style/footer.css" type="text/css">
 	<script type="text/javascript" src="/Public/Home/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="/Public/Home/js/jquery.form.js"></script>
+	<script type="text/javascript" src="/Public/Home/js/layer/layer.js"></script>
 	<script type="text/javascript" src="/Public/Home/js/header.js"></script>
-	
 	<?php foreach ($page_js as $k => $v): ?>
 	<script type="text/javascript" src="/Public/Home/js/<?php echo ($v); ?>.js"></script>
 	<?php endforeach; ?>
@@ -106,7 +107,6 @@
 		</div>
 	</div>
 	<!-- 登录主体部分end -->
-
 <div style="clear:both;"></div>
 
 	<!-- 底部导航 start -->
@@ -171,6 +171,43 @@
 		</div>
 	</div>
 	<!-- 底部导航 end -->
+<script type="text/javascript">
+	//jqureyForm插件提交表单
+	$('form').submit(function(){
+		$(this).ajaxSubmit({
+			type:"post",
+			url:"<?php echo U('login');?>",
+			dataType:"json",
+			success:function(msg){
+				if(msg.status==1){
+					//成功跳转首页
+					var index = layer.load(0, {shade: false}); //0代表加载的风格，支持0-2
+					setTimeout(function(){
+						location.href="<?php echo U('Index/index');?>";
+					},1500);
+				}else if(msg.status==2){
+					//成功跳转评论页面
+					var index = layer.load(0, {shade: false}); //0代表加载的风格，支持0-2
+					setTimeout(function(){
+						location.href=msg.url;
+					},1500);
+					
+				}else{
+				//错误提示
+					layer.alert('<h4 style="color:red;">'+msg.error+'</h4>', {
+						  skin: 'layui-layer-molv', //样式类名
+						  closeBtn: 1
+						});
+				}
+			}		
+		});
+		
+		//阻止表单提交
+		return false;
+	});
+	
+	
+</script>
 	
 	<!-- 底部导航 end -->
 	<div style="clear:both;"></div>

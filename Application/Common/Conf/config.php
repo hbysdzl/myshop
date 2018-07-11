@@ -21,9 +21,9 @@ return array(
     'IMG_URL' => '/Public/Upload/',
 
     /************** 发邮件的配置 ***************/
-    'MAIL_ADDRESS' => 'hbdzlaa@163.com',   // 发货人的email
-    'MAIL_FROM' => '京西商城',      // 发货人姓名
+    'MAIL_ADDRESS' => 'hbdzlaa@163.com',   // 发件人的email
+    'MAIL_FROM' => '京西商城',      // 发件人昵称
     'MAIL_SMTP' => 'smtp.163.com',      // 邮件服务器的地址
-    'MAIL_LOGINNAME' => 'hbdzlaa@163.com',
-    'MAIL_PASSWORD' => 'duanzonglai123',
+    'MAIL_LOGINNAME' => 'hbdzlaa@163.com',//邮件账号
+    'MAIL_PASSWORD' => 'duanzonglai123',//第三方授权码
 );

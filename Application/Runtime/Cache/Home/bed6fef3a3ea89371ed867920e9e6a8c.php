@@ -17,8 +17,9 @@
 	<link rel="stylesheet" href="/Public/Home/style/bottomnav.css" type="text/css">
 	<link rel="stylesheet" href="/Public/Home/style/footer.css" type="text/css">
 	<script type="text/javascript" src="/Public/Home/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="/Public/Home/js/jquery.form.js"></script>
+	<script type="text/javascript" src="/Public/Home/js/layer/layer.js"></script>
 	<script type="text/javascript" src="/Public/Home/js/header.js"></script>
-	
 	<?php foreach ($page_js as $k => $v): ?>
 	<script type="text/javascript" src="/Public/Home/js/<?php echo ($v); ?>.js"></script>
 	<?php endforeach; ?>
@@ -55,7 +56,7 @@
 		</div>
 		<div class="login_bd">
 			<div class="login_form fl">
-				<form action="/index.php/Home/Member/regist.html" method="post" id="form">
+				<form action="" method="post">
 					<ul>
 						<li>
 							<label for="">Email：</label>
@@ -180,6 +181,34 @@
 	</div>
 	<!-- 底部导航 end -->
 <script type="text/javascript">
+//jqureyForm插件提交表单
+//实现使用jQueryForm实现表单提交
+	$('form').submit(function(){
+		//具体实现使用jqueryForm的方式ajax提交
+		$(this).ajaxSubmit({
+			url:"<?php echo U('regist');?>", //指定表单的提交地址
+			type:'post',//表示具体的请求类型 post/get
+			dataType:'json',//指定数据交互格式
+			success:function(msg){
+				if(msg.status==1){
+					layer.alert('恭喜您！注册成功，请登录邮箱完成验证', {
+						  skin: 'layui-layer-molv' //样式类名
+						  ,closeBtn: 2
+						
+						});
+				}else{
+					
+					layer.alert(msg.error, {
+					  skin: 'layui-layer-molv' //样式类名
+					  ,closeBtn: 2
+					
+					});
+				}
+			}
+		});
+		//阻止当前的表单默认的提交
+		return false;
+	});
 //点击按钮发送验证码
 	$('#sendcode').click(function() {
 		//获取手机号码
@@ -191,9 +220,16 @@
 			dataType:"json",
 			success: function(msg){
 					if (msg.status==1) {
-						alert('发送成功，注意查收！');
+						layer.tips('发送成功，注意查收！', '#sendcode', {
+							  tips: [1, '#3595CC'],
+							  time: 4000
+							});
+						
 					}else{
-						alert(msg.error);
+						layer.tips(msg.error, '#phone', {
+							  tips: [1, '#3595CC'],
+							  time: 2000
+							});
 					}
 			}
 		});
