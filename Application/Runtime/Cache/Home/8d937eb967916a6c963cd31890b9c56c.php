@@ -178,7 +178,7 @@ $catModel = D('Goodscategory'); $catData = $catModel->getNavCatData(); ?>
 					<li><a href="">品牌大全</a></li>
 					<li><a href="">团购</a></li>
 					<li><a href="">积分商城</a></li>
-					<li><a href="">夺宝奇兵</a></li>
+					<li><a href="<?php echo U('Center/orderLst');?>">会员中心</a></li>
 				</ul>
 				<div class="right_corner fl"></div>
 			</div>
