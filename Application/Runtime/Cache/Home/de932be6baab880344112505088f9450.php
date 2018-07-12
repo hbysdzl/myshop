@@ -17,8 +17,9 @@
 	<link rel="stylesheet" href="/Public/Home/style/bottomnav.css" type="text/css">
 	<link rel="stylesheet" href="/Public/Home/style/footer.css" type="text/css">
 	<script type="text/javascript" src="/Public/Home/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="/Public/Home/js/jquery.form.js"></script>
+	<script type="text/javascript" src="/Public/Home/js/layer/layer.js"></script>
 	<script type="text/javascript" src="/Public/Home/js/header.js"></script>
-	
 	<?php foreach ($page_js as $k => $v): ?>
 	<script type="text/javascript" src="/Public/Home/js/<?php echo ($v); ?>.js"></script>
 	<?php endforeach; ?>
@@ -267,12 +268,14 @@ $('#TijiaoOrder').click(function(){
 		success:function(data){
 			if(data.ok==1){
 				//alert('订单提交成功');
-				$('#tishi').html('!订单提交成功正在跳转');
-				$('#tishi').fadeIn(1000);
-				$('#tishi').fadeOut(2000);
+				layer.alert('订单提交成功，正在前往支付页面', {
+					  skin: 'layui-layer-molv', //样式类名
+					  closeBtn: 0
+						});
+				
 				setTimeout(function(){
-					location.href="<?php echo U('Payment/payIndex');?>";
-				},3000);
+					location.href="<?php echo U('Payment/payIndex','',false);?>/order/"+data.orderID;
+				},1000);
 				
 			}else{
 				//alert(data.error);

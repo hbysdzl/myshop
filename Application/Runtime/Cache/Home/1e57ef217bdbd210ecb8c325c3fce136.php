@@ -17,8 +17,9 @@
 	<link rel="stylesheet" href="/Public/Home/style/bottomnav.css" type="text/css">
 	<link rel="stylesheet" href="/Public/Home/style/footer.css" type="text/css">
 	<script type="text/javascript" src="/Public/Home/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="/Public/Home/js/jquery.form.js"></script>
+	<script type="text/javascript" src="/Public/Home/js/layer/layer.js"></script>
 	<script type="text/javascript" src="/Public/Home/js/header.js"></script>
-	
 	<?php foreach ($page_js as $k => $v): ?>
 	<script type="text/javascript" src="/Public/Home/js/<?php echo ($v); ?>.js"></script>
 	<?php endforeach; ?>

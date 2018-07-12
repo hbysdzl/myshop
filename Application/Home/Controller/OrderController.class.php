@@ -50,8 +50,8 @@ class OrderController extends BackController{
         if(IS_POST){
             $orderModel=D('Order');
             if($orderModel->create(I('post.'),1)){
-                if($orderModel->add()){
-                    echo json_encode(array('ok'=>1));
+                if($orderID=$orderModel->add()){
+                    echo json_encode(array('ok'=>1,'orderID'=>$orderID));
                     die();
                 }
             }

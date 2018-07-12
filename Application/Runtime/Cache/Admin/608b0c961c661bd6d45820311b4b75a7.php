@@ -38,7 +38,7 @@
         </p>
     </div>
     <div id="tabbody-div">
-	    <form name="main_form" method="POST" action="/index.php/Admin/Goods/edit/goods_id/74.html" enctype="multipart/form-data">
+	    <form name="main_form" method="POST" action="/index.php/Admin/Goods/edit/goods_id/75/p/1.html" enctype="multipart/form-data">
 	        <!-- 基本信息 -->
 	    	<table class="table_content" cellspacing="1" cellpadding="3" width="100%">
 	    	<input type="hidden" name="goods_id" value="<?php echo ($editgoods["goods_id"]); ?>" />
