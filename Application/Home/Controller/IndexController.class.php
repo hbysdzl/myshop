@@ -5,8 +5,7 @@ namespace Home\Controller;
 class IndexController extends BackController {
     
     public function index(){
-        echo date('Y-m-d H:i:s','1531360553
-           ');
+        
         $this->setPageInfo("京东商城","描述","京东首页",1,array('index'),array('index'));  
         $goodsModel=D('Goods');
         //疯狂抢购

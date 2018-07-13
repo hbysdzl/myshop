@@ -19,9 +19,14 @@
 </head>
 <body>
 <h1>
-    <span class="action-span"><a href="<?php echo ($_bitlink); ?>"><?php echo ($_btnName); ?></a></span>
-    <span class="action-span1"><a href="__GROUP__">管理中心</a></span>
-    <span id="search_id" class="action-span1"> -<?php echo ($_title); ?>  </span>
+	<?php if($_btnName == ' '):?>
+		<span class="action-span" style="display: none;"><a href="<?php echo ($_bitlink); ?>"><?php echo ($_btnName); ?></a></span>
+	<?php else:?>
+		<span class="action-span"><a href="<?php echo ($_bitlink); ?>"><?php echo ($_btnName); ?></a></span>
+	<?php endif?>
+    
+    <span class="action-span1"><a href="<?php echo U('Index/index');?>">管理中心</a></span>
+    <span id="search_id" class="action-span1"> -<?php echo ($_title); ?></span>
     <div style="clear:both"></div>
 </h1>
 

@@ -1,0 +1,45 @@
+<layout name="Index/header_footer" />
+<div class="list-div" id="listDiv">
+    <table cellpadding="3" cellspacing="1">
+        <tr>
+            <th width="3%">订单号</th>
+            <th width="8%">下单时间</th>
+            <th width="8%">会员</th>
+            <th width="12%">支付宝交易号</th>
+            <th width="5%">订单金额</th>
+            <th width="8%">订单状态</th>
+            <th width="5%">收货人</th>
+            <th>收货地址</th>
+            <th>操作</th>
+        </tr>
+        
+        <?php foreach($info as $k=>$v):?>
+        <tr>
+            <td align="center">{$v.id}</td>
+            <td align="center"><?php echo date('Y-m-d H:i:s',$v['addtime'])?></td>
+            <td>{$v.email}</td>
+            <td>{$v.alipaid}</td>
+            
+            <td align="center">￥{$v.goods_price}</td>
+            <td align="center">
+            	<?php if($v['pay_status']==0):?>
+            		待支付
+            	<?php elseif($v['pay_status']==1 && $v['post_status']==0):?>
+            		已支付，待发货
+            	<?php elseif($v['post_status']==1):?>
+            		待收货
+            	<?php else:?>
+            		已确认收货
+            	<?php endif;?>
+            </td>
+            <td align="center">{$v.shr_name}</td>
+            <td align="center">{$v.shr_province},{$v.shr_city},{$v.shr_area}</td>
+            <td align="center">
+            <?php if($v['pay_status']==1):?>
+            <a href="{:U('delive','orderid='.$v['id'])}">发货</a>
+            <?php endif?>
+            </td>
+        </tr>
+        <?php endforeach;?>
+    </table>
+</div>

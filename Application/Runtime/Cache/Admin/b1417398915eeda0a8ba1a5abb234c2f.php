@@ -33,42 +33,30 @@
 <!-- 页面中的内容 -->
 
 <div class="main-div">
-    <form name="main_form" method="POST" action="/index.php/Admin/Privilege/edit/pri_id/54.html" enctype="multipart/form-data" >
-    	<input type="hidden" name="pri_id" value="<?php echo $data['pri_id']; ?>" />
+    <form name="main_form" method="POST" action="/index.php/Admin/NumberLevel/add.html" enctype="multipart/form-data">
         <table cellspacing="1" cellpadding="3" width="100%">
-			<tr>
-				<td class="label">上级权限：</td>
-				<td>
-					<select name="parent_id">
-						<option value="0">顶级权限</option>
-						<?php foreach ($parentData as $k => $v): ?> 
-						<?php if($v['pri_id'] == $data['pri_id'] || in_array($v['pri_id'], $children)) continue ; ?> 
-						<option <?php if($v['pri_id'] == $data['parent_id']): ?>selected="selected"<?php endif; ?> value="<?php echo $v['pri_id']; ?>"><?php echo str_repeat('-', 8*$v['level']).$v['pri_name']; ?></option>
-						<?php endforeach; ?>					</select>
-				</td>
-			</tr>
             <tr>
-                <td class="label">权限名称：</td>
+                <td class="label">会员名称：</td>
                 <td>
-                    <input  type="text" name="pri_name" value="<?php echo $data['pri_name']; ?>" />
+                    <input  type="text" name="level_name" value="" />
                 </td>
             </tr>
             <tr>
-                <td class="label">模块名称：</td>
+                <td class="label">积分下限：</td>
                 <td>
-                    <input  type="text" name="module_name" value="<?php echo $data['module_name']; ?>" />
+                    <input  type="text" name="bottom_num" value="0" />
                 </td>
             </tr>
             <tr>
-                <td class="label">控制器名称：</td>
+                <td class="label">积分上限：</td>
                 <td>
-                    <input  type="text" name="controller_name" value="<?php echo $data['controller_name']; ?>" />
+                    <input  type="text" name="top_num" value="0" />
                 </td>
             </tr>
             <tr>
-                <td class="label">方法名称：</td>
+                <td class="label">折扣率（百分比） 如：90=9折</td>
                 <td>
-                    <input  type="text" name="action_name" value="<?php echo $data['action_name']; ?>" />
+                    <input  type="text" name="rate" value="100" />
                 </td>
             </tr>
             <tr>

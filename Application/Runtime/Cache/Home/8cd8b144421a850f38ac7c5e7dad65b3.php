@@ -244,7 +244,7 @@ $.ajax({
 			<div class="menu_wrap">
 				<dl>
 					<dt>订单中心 <b></b></dt>
-					<dd class="cur"><b>.</b><a href="">我的订单</a></dd>
+					<dd class="cur"><b>.</b><a href="">物流信息</a></dd>
 					<dd><b>.</b><a href="">我的关注</a></dd>
 					<dd><b>.</b><a href="">浏览历史</a></dd>
 					<dd><b>.</b><a href="">我的团购</a></dd>
@@ -272,7 +272,7 @@ $.ajax({
 		<!-- 右侧内容区域 start -->
 		<div class="content fl ml10">
 			<div class="order_hd">
-				<h3>我的订单</h3>
+				<h3>物流信息</h3>
 				<dl>
 					<dt>便利提醒：</dt>
 					<dd>待付款（<?php echo ($daiFuKuan); ?>）</dd>
@@ -291,40 +291,16 @@ $.ajax({
 				<table class="orders">
 					<thead>
 						<tr>
-							<th width="10%">订单号</th>
-							<th width="10%">收货人</th>
-							<th width="20%">订单金额</th>
-							<th width="20%">下单时间</th>
-							<th width="10%">订单状态</th>
-							<th width="10%">操作</th>
+							<th width="20%">时间</th>
+							<th width="80%">状态</th>
+							
 						</tr>
 					</thead>
 					<tbody>
-					<?php if(is_array($order_list)): $i = 0; $__LIST__ = $order_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-							<td><a href=""><?php echo ($vo["id"]); ?></a></td>
-							<td><?php echo ($vo["shr_name"]); ?></td>
-							<td>￥<?php echo ($vo["total_price"]); ?></td>
-							<td><?php echo (date('Y-m-d H:i:s',$vo["addtime"])); ?></td>
-							<td>
-								<?php if($vo['pay_status']==0):?>
-									待支付
-								<?php elseif($vo['pay_status']==1 && $vo['post_status']==0):?>
-									已支付，待发货
-								<?php elseif($vo['post_status']==1):?>
-									待收货
-								<?php else:?>
-									已完成
-								<?php endif;?>
-							</td>
-							<td>
-								<?php if($vo['pay_status']==0):?>
-								<a href="<?php echo U('Payment/payIndex','order='.$vo['id']);?>">继续支付</a>
-								<?php elseif($vo['pay_status']==1 && $vo['post_status']==1):?>
-								<a href="<?php echo U('express','orderid='.$vo['id']);?>">查看物流</a></td>
-								<?php else:?>
-									我要催单
-								<?php endif;?>
-							</td>	
+					<?php if(is_array($data["result"]["list"])): $i = 0; $__LIST__ = $data["result"]["list"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+							<td><a href=""><?php echo ($vo["datetime"]); ?></a></td>
+							<td><?php echo ($vo["remark"]); ?></td>
+							
 						</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 					</tbody> 
 				</table>

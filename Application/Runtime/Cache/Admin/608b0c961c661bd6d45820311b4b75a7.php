@@ -19,9 +19,14 @@
 </head>
 <body>
 <h1>
-    <span class="action-span"><a href="<?php echo ($_bitlink); ?>"><?php echo ($_btnName); ?></a></span>
-    <span class="action-span1"><a href="__GROUP__">管理中心</a></span>
-    <span id="search_id" class="action-span1"> -<?php echo ($_title); ?>  </span>
+	<?php if($_btnName == ' '):?>
+		<span class="action-span" style="display: none;"><a href="<?php echo ($_bitlink); ?>"><?php echo ($_btnName); ?></a></span>
+	<?php else:?>
+		<span class="action-span"><a href="<?php echo ($_bitlink); ?>"><?php echo ($_btnName); ?></a></span>
+	<?php endif?>
+    
+    <span class="action-span1"><a href="<?php echo U('Index/index');?>">管理中心</a></span>
+    <span id="search_id" class="action-span1"> -<?php echo ($_title); ?></span>
     <div style="clear:both"></div>
 </h1>
 
@@ -38,7 +43,7 @@
         </p>
     </div>
     <div id="tabbody-div">
-	    <form name="main_form" method="POST" action="/index.php/Admin/Goods/edit/goods_id/75/p/1.html" enctype="multipart/form-data">
+	    <form name="main_form" method="POST" action="/index.php/Admin/Goods/edit/goods_id/73/p/1.html" enctype="multipart/form-data">
 	        <!-- 基本信息 -->
 	    	<table class="table_content" cellspacing="1" cellpadding="3" width="100%">
 	    	<input type="hidden" name="goods_id" value="<?php echo ($editgoods["goods_id"]); ?>" />

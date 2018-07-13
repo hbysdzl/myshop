@@ -32,56 +32,50 @@
 
 <!-- 页面中的内容 -->
 
-<div class="main-div">
-    <form name="main_form" method="POST" action="/index.php/Admin/Privilege/edit/pri_id/54.html" enctype="multipart/form-data" >
-    	<input type="hidden" name="pri_id" value="<?php echo $data['pri_id']; ?>" />
-        <table cellspacing="1" cellpadding="3" width="100%">
-			<tr>
-				<td class="label">上级权限：</td>
-				<td>
-					<select name="parent_id">
-						<option value="0">顶级权限</option>
-						<?php foreach ($parentData as $k => $v): ?> 
-						<?php if($v['pri_id'] == $data['pri_id'] || in_array($v['pri_id'], $children)) continue ; ?> 
-						<option <?php if($v['pri_id'] == $data['parent_id']): ?>selected="selected"<?php endif; ?> value="<?php echo $v['pri_id']; ?>"><?php echo str_repeat('-', 8*$v['level']).$v['pri_name']; ?></option>
-						<?php endforeach; ?>					</select>
-				</td>
-			</tr>
-            <tr>
-                <td class="label">权限名称：</td>
-                <td>
-                    <input  type="text" name="pri_name" value="<?php echo $data['pri_name']; ?>" />
-                </td>
-            </tr>
-            <tr>
-                <td class="label">模块名称：</td>
-                <td>
-                    <input  type="text" name="module_name" value="<?php echo $data['module_name']; ?>" />
-                </td>
-            </tr>
-            <tr>
-                <td class="label">控制器名称：</td>
-                <td>
-                    <input  type="text" name="controller_name" value="<?php echo $data['controller_name']; ?>" />
-                </td>
-            </tr>
-            <tr>
-                <td class="label">方法名称：</td>
-                <td>
-                    <input  type="text" name="action_name" value="<?php echo $data['action_name']; ?>" />
-                </td>
-            </tr>
-            <tr>
-                <td colspan="99" align="center">
-                    <input type="submit" class="button" value=" 确定 " />
-                    <input type="reset" class="button" value=" 重置 " />
-                </td>
-            </tr>
-        </table>
-    </form>
+<div class="list-div" id="listDiv">
+    <table cellpadding="3" cellspacing="1">
+        <tr>
+            <th width="3%">订单号</th>
+            <th width="8%">下单时间</th>
+            <th width="8%">会员</th>
+            <th width="12%">支付宝交易号</th>
+            <th width="5%">订单金额</th>
+            <th width="8%">订单状态</th>
+            <th width="5%">收货人</th>
+            <th>收货地址</th>
+            <th>操作</th>
+        </tr>
+        
+        <?php foreach($info as $k=>$v):?>
+        <tr>
+            <td align="center"><?php echo ($v["id"]); ?></td>
+            <td align="center"><?php echo date('Y-m-d H:i:s',$v['addtime'])?></td>
+            <td><?php echo ($v["email"]); ?></td>
+            <td><?php echo ($v["alipaid"]); ?></td>
+            
+            <td align="center">￥<?php echo ($v["goods_price"]); ?></td>
+            <td align="center">
+            	<?php if($v['pay_status']==0):?>
+            		待支付
+            	<?php elseif($v['pay_status']==1 && $v['post_status']==0):?>
+            		已支付，待发货
+            	<?php elseif($v['post_status']==1):?>
+            		待收货
+            	<?php else:?>
+            		已确认收货
+            	<?php endif;?>
+            </td>
+            <td align="center"><?php echo ($v["shr_name"]); ?></td>
+            <td align="center"><?php echo ($v["shr_province"]); ?>,<?php echo ($v["shr_city"]); ?>,<?php echo ($v["shr_area"]); ?></td>
+            <td align="center">
+            <?php if($v['pay_status']==1):?>
+            <a href="<?php echo U('delive','orderid='.$v['id']);?>">发货</a>
+            <?php endif?>
+            </td>
+        </tr>
+        <?php endforeach;?>
+    </table>
 </div>
-<script>
-</script>
 
 <div id="footer">
 共执行 9 个查询，用时 0.025161 秒，Gzip 已禁用，内存占用 3.258 MB<br />

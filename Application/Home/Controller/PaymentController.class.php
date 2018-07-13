@@ -88,7 +88,9 @@ class PaymentController extends BackController{
             //——请根据您的业务逻辑来编辑代码
             //将订单表设置为已支付的状态
             $order=M('order');
-            $order->where('id='.$out_trade_no)->setField('pay_status',1);
+              $save['pay_status']=1;
+              $save['alipaid']=$trade_no;
+            $order->where('id='.$out_trade_no)->save($save);
             
             $url=U('Center/orderLst');
             echo "恭喜您支付成功！<br />订单号：".$out_trade_no."<br/>支付宝交易号：".$trade_no."<br/><a href='".$url."'>点击前往我的订单！</a>";

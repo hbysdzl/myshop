@@ -34,4 +34,27 @@ class CenterController extends BackController{
             $this->assign('daiFuKuan',$daiFuKuan);
             $this->display();
         }
+        
+        /**
+         * 订单物流状态
+         * */
+        public function express(){
+            $orderID=I('get.orderid');
+            if(!$orderID){
+                $this->error('参数错误');
+            }
+            $orderModel=M('order');
+            $info=$orderModel->field('com,no')->find($orderID);
+            //调用快递接口
+            $key='899fe70f6da4ecf9667c897618bc71c4';
+            $url="http://v.juhe.cn/exp/index?key=".$key."&com=".$info['com']."&no=".$info['no'];
+            $data=file_get_contents($url);
+            
+            $data=json_decode($data,true);
+            
+            $this->assign('data',$data);
+           
+            $this->display();
+            
+        }
 }
