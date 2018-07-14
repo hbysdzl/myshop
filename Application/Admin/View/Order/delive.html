@@ -1,7 +1,5 @@
 <layout name="Index/header_footer" />
 
-
-<block name="body">
 <style type="text/css">
 .main-div table {background: #BBDDE5;}
 </style>
@@ -35,7 +33,7 @@
                     <td align="right" width="18%">联系电话:</td>
                     <td align="left" width="34%">{$arr.shr_tel}</td>
                     <td align="right" width="15%">收货地址:</td>
-                    <td align="left">{$arr.shr_province},{$arr.shr_city},{$arr.shr_area}</td>
+                    <td align="left">{$arr.shr_province},{$arr.shr_city},{$arr.shr_area},{$arr.shr_address}</td>
                 </tr>
                 <tr>
                     <td align="right" width="18%">商品详情:</td>
@@ -109,4 +107,65 @@
             <input type="reset" value=" 重置 " />
         </div>
     </form>
-</block>
+
+
+<div class="list-div">
+   <table width="100%" cellpadding="3" cellspacing="1">
+     <tbody>
+         <tr>
+             <th colspan="4">地图信息</th>
+         </tr>
+         <tr>
+             <td>
+             <div class="list-div" id="container" style="width:100%;height:300px;"></div>
+             </td>
+         </tr>        
+     </tbody>
+  </table>
+</div>
+
+<!-- 创建收货地址地图 -->
+<script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp"></script>
+<script>
+//初始化地图函数 
+function init() {
+	//定义变量获取地图显示的容器
+	var option={'zoom':15,};//定义具体的缩放
+    var map = new qq.maps.Map(document.getElementById("container"),option );//实例化地图核心类初始化地图
+       
+   // var center=map.panTo(new qq.maps.LatLng(39.916527,116.397128));// 地图的具体位置坐标 
+    
+    //地址解析后的回调函数
+    var callbacks={
+    	    complete:function(result){
+    	        map.setCenter(result.detail.location);
+    	        
+    	        
+    	       /* var marker = new qq.maps.Marker({
+    	            map:map,
+    	            position: result.detail.location
+    	        });
+    	        var marker = new qq.maps.Label({
+    	            position: result.detail.location,
+    	            map: map,
+    	            content:'文本标注'
+    	        });*/
+    	      //实例化覆盖物
+    	        var infoWin = new qq.maps.InfoWindow({
+    	            map: map
+    	        });
+    	        infoWin.open();
+    	        infoWin.setContent('<div style="width:-50px;padding-top:10px;">收货位置</div>'); //  自定义内容
+    	        infoWin.setPosition(result.detail.location);//指定具体位置
+    	    },
+    	}
+    	//实例化地图解析类
+   	geocoder = new qq.maps.Geocoder(callbacks);
+  		//调用相关方法将实际地址解析为经纬度坐标
+   	geocoder.getLocation("{$arr.shr_province},{$arr.shr_city},{$arr.shr_area},{$arr.shr_address}");
+    	
+} 
+
+//调用
+init();
+</script>

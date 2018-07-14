@@ -1,5 +1,17 @@
 <layout name="public/layout"/>
 
 <include file="public/header"/>
-122121
+		
+<div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1453102389647">
+	<span class="news_share">分享到：</span>
+		<a href="{:U('Article/newstext',array('id' => $res['id']))}" class="bds_more" data-cmd="more"></a>
+		<a href="{:U('Article/newstext',array('id' => $res['id']))}" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+		<a href="{:U('Article/newstext',array('id' => $res['id']))}" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+		<a href="{:U('Article/newstext',array('id' => $res['id']))}" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+		<a href="{:U('Article/newstext',array('id' => $res['id']))}" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+		<a href="{:U('Article/newstext',array('id' => $res['id']))}" class="bds_t163" data-cmd="t163"></a>
+</div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","t163"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=86835285.js?cdnversion='+~(-new Date()/36e5)];
+</script>
 <include file="public/footer"/>

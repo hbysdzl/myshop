@@ -29,7 +29,7 @@
 
 <!-- 列表 -->
 <div class="list-div" id="listDiv">
-<form action="/index.php/Admin/Goods/goodsNumber/goods_id/75.html" method="POST">
+<form action="/index.php/Admin/Goods/goodsNumber/goods_id/73.html" method="POST">
 	<table cellpadding="3" cellspacing="1">
       <tr>
       	<?php foreach($attr as $k=>$v):?>

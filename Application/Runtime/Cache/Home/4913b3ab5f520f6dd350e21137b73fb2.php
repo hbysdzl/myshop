@@ -17,8 +17,9 @@
 	<link rel="stylesheet" href="/Public/Home/style/bottomnav.css" type="text/css">
 	<link rel="stylesheet" href="/Public/Home/style/footer.css" type="text/css">
 	<script type="text/javascript" src="/Public/Home/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="/Public/Home/js/jquery.form.js"></script>
+	<script type="text/javascript" src="/Public/Home/js/layer/layer.js"></script>
 	<script type="text/javascript" src="/Public/Home/js/header.js"></script>
-	
 	<?php foreach ($page_js as $k => $v): ?>
 	<script type="text/javascript" src="/Public/Home/js/<?php echo ($v); ?>.js"></script>
 	<?php endforeach; ?>
@@ -32,7 +33,7 @@
 			</div>
 			<div class="topnav_right fr">
 				<ul>
-					<li>您好，欢迎来到京西！[<a href="login.html">登录</a>] [<a href="register.html">免费注册</a>] </li>
+					<li id="login"></li>
 					<li class="line">|</li>
 					<li>我的订单</li>
 					<li class="line">|</li>
@@ -48,6 +49,8 @@
 	<!-- 内容 -->
 	
 
+<?php
+$catModel = D('Goodscategory'); $catData = $catModel->getNavCatData(); ?>
 <!-- 头部 start -->
 	<div class="header w1210 bc mt15">
 		<!-- 头部上半部分 start 包括 logo、搜索、用户中心和购物车结算 -->
@@ -106,10 +109,7 @@
 						<div style="clear:both;"></div>
 						<div class="viewlist mt10">
 							<h3>最近浏览的商品：</h3>
-							<ul>
-								<li><a href=""><img src="/Public/Home/images/view_list1.jpg" alt="" /></a></li>
-								<li><a href=""><img src="/Public/Home/images/view_list2.jpg" alt="" /></a></li>
-								<li><a href=""><img src="/Public/Home/images/view_list3.jpg" alt="" /></a></li>
+							<ul id="go">
 							</ul>
 						</div>
 					</dd>
@@ -121,7 +121,7 @@
 			<div class="cart fl">
 				<dl>
 					<dt>
-						<a href="">去购物车结算</a>
+						<a href="<?php echo U('Cart/CartList');?>">去购物车结算</a>
 						<b></b>
 					</dt>
 					<dd>
@@ -140,289 +140,46 @@
 		<!-- 导航条部分 start -->
 		<div class="nav w1210 bc mt10">
 			<!--  商品分类部分 start-->
-			<div class="category fl <?php echo $show_nav!=1? 'cat1':''?> "> <!-- 非首页，需要添加cat1类 -->
-				<div class="cat_hd <?php echo $show_nav!=1? 'off':''?>">  <!-- 注意，首页在此div上只需要添加cat_hd类，非首页，默认收缩分类时添加上off类，鼠标滑过时展开菜单则将off类换成on类 -->
+			<div class="category fl <?php if($show_nav!=1) echo 'cat1'; ?>"> <!-- 非首页，需要添加cat1类 -->
+				<div class="cat_hd <?php if($show_nav!=1) echo 'off'; ?>">  <!-- 注意，首页在此div上只需要添加cat_hd类，非首页，默认收缩分类时添加上off类，鼠标滑过时展开菜单则将off类换成on类 -->
 					<h2>全部商品分类</h2>
 					<em></em>
 				</div>
 				
-				<div class="cat_bd <?php echo $show_nav!=1? 'none':''?>">
-					
-					<div class="cat item1">
-						<h3><a href="">图像、音像、数字商品</a> <b></b></h3>
+				<div class="cat_bd <?php if($show_nav!=1) echo 'none'; ?>">
+				<!-- 循环顶级分类 -->
+					<?php foreach ($catData as $k => $v): ?>
+					<div class="cat <?php if($k==0) echo 'item1'; ?>">
+						<h3><a href="<?php echo U('Search/Search' ,'', false);?>/cat_id/<?php echo ($v["cat_id"]); ?>" target="_blank"><?php echo ($v["cat_name"]); ?></a> <b></b></h3>
 						<div class="cat_detail">
-							<dl class="dl_1st">
-								<dt><a href="">电子书</a></dt>
+							<!-- 循环二级分类 -->
+							<?php foreach ($v['children'] as $k1 => $v1): ?>
+							<dl <?php if($k1==0) echo 'class="dl_1st"'; ?>>
+								<dt><a href="<?php echo U('Search/Search' ,'', false);?>/cat_id/<?php echo ($v1["cat_id"]); ?>" target="_blank"><?php echo ($v1["cat_name"]); ?></a></dt>
 								<dd>
-									<a href="">免费</a>
-									<a href="">小说</a>
-									<a href="">励志与成功</a>
-									<a href="">婚恋/两性</a>
-									<a href="">文学</a>
-									<a href="">经管</a>
-									<a href="">畅读VIP</a>						
+									<!-- 循环三级分类 -->
+									<?php foreach ($v1['children'] as $k2 => $v2): ?>
+									<a href="<?php echo U('Search/Search' ,'', false);?>/cat_id/<?php echo ($v2["cat_id"]); ?>"><?php echo ($v2["cat_name"]); ?></a>
+									<?php endforeach; ?>			
 								</dd>
 							</dl>
-
-							<dl>
-								<dt><a href="">数字音乐</a></dt>
-								<dd>
-									<a href="">通俗流行</a>
-									<a href="">古典音乐</a>
-									<a href="">摇滚说唱</a>
-									<a href="">爵士蓝调</a>
-									<a href="">乡村民谣</a>
-									<a href="">有声读物</a>
-								</dd>
-							</dl>
-
-							<dl>
-								<dt><a href="">音像</a></dt>
-								<dd>
-									<a href="">音乐</a>
-									<a href="">影视</a>
-									<a href="">教育音像</a>
-									<a href="">游戏</a>
-								</dd>
-							</dl>
-
-							<dl>
-								<dt><a href="">文艺</a></dt>
-								<dd>
-									<a href="">小说</a>
-									<a href="">文学</a>
-									<a href="">青春文学</a>
-									<a href="">传纪</a>
-									<a href="">艺术</a>
-									<a href="">经管</a>
-									<a href="">畅读VIP</a>						
-								</dd>
-							</dl>
-
-							<dl>
-								<dt><a href="">人文社科</a></dt>
-								<dd>
-									<a href="">历史</a>
-									<a href="">心理学</a>
-									<a href="">政治/军事</a>
-									<a href="">国学/古籍</a>
-									<a href="">哲学/宗教</a>
-									<a href="">社会科学</a>
-								</dd>
-							</dl>
-
-							<dl>
-								<dt><a href="">经管励志</a></dt>
-								<dd>
-									<a href="">经济</a>
-									<a href="">金融与投资</a>
-									<a href="">管理</a>
-									<a href="">励志与成功</a>
-								</dd>
-							</dl>
-
-							<dl>
-								<dt><a href="">人文社科</a></dt>
-								<dd>
-									<a href="">历史</a>
-									<a href="">心理学</a>
-									<a href="">政治/军事</a>
-									<a href="">国学/古籍</a>
-									<a href="">哲学/宗教</a>
-									<a href="">社会科学</a>
-								</dd>
-							</dl>
-
-							<dl>
-								<dt><a href="">生活</a></dt>
-								<dd>
-									<a href="">烹饪/美食</a>
-									<a href="">时尚/美妆</a>
-									<a href="">家居</a>
-									<a href="">娱乐/休闲</a>
-									<a href="">动漫/幽默</a>
-									<a href="">体育/运动</a>
-								</dd>
-							</dl>
-
-							<dl>
-								<dt><a href="">科技</a></dt>
-								<dd>
-									<a href="">科普</a>
-									<a href="">建筑</a>
-									<a href="">IT</a>
-									<a href="">医学</a>
-									<a href="">工业技术</a>
-									<a href="">电子/通信</a>
-									<a href="">农林</a>
-									<a href="">科学与自然</a>
-								</dd>
-							</dl>
-
+							<?php endforeach; ?>
 						</div>
 					</div>
-
-					<div class="cat">
-						<h3><a href="">家用电器</a><b></b></h3>
-						<div class="cat_detail">
-							<dl class="dl_1st">
-								<dt><a href="">大家电</a></dt>
-								<dd>
-									<a href="">平板电视</a>
-									<a href="">空调</a>
-									<a href="">冰箱</a>
-									<a href="">洗衣机</a>
-									<a href="">热水器</a>
-									<a href="">DVD</a>
-									<a href="">烟机/灶具</a>						
-								</dd>
-							</dl>
-
-							<dl>
-								<dt><a href="">生活电器</a></dt>
-								<dd>
-									<a href="">取暖器</a>
-									<a href="">加湿器</a>
-									<a href="">净化器</a>
-									<a href="">饮水机</a>
-									<a href="">净水设备</a>
-									<a href="">吸尘器</a>
-									<a href="">电风扇</a>						
-								</dd>
-							</dl>
-
-							<dl>
-								<dt><a href="">厨房电器</a></dt>
-								<dd>
-									<a href="">电饭煲</a>
-									<a href="">豆浆机</a>
-									<a href="">面包机</a>
-									<a href="">咖啡机</a>
-									<a href="">微波炉</a>
-									<a href="">电磁炉</a>
-									<a href="">电水壶</a>						
-								</dd>
-							</dl>
-
-							<dl>
-								<dt><a href="">个护健康</a></dt>
-								<dd>
-									<a href="">剃须刀</a>
-									<a href="">电吹风</a>
-									<a href="">按摩器</a>
-									<a href="">足浴盆</a>
-									<a href="">血压计</a>
-									<a href="">体温计</a>
-									<a href="">血糖仪</a>						
-								</dd>
-							</dl>
-
-							<dl>
-								<dt><a href="">五金家装</a></dt>
-								<dd>
-									<a href="">灯具</a>
-									<a href="">LED灯</a>
-									<a href="">水槽</a>
-									<a href="">龙头</a>
-									<a href="">门铃</a>
-									<a href="">电器开关</a>
-									<a href="">插座</a>						
-								</dd>
-							</dl>
-						</div>
-					</div>
-
-					<div class="cat">
-						<h3><a href="">手机、数码</a><b></b></h3>
-						<div class="cat_detail none">
-							
-						</div>
-					</div>
-
-					<div class="cat">
-						<h3><a href="">电脑、办公</a><b></b></h3>
-						<div class="cat_detail none">
-							
-						</div>
-					</div>
-					
-					<div class="cat">
-						<h3><a href="">家局、家具、家装、厨具</a><b></b></h3>
-						<div class="cat_detail none">
-							
-						</div>
-					</div>
-					
-					<div class="cat">
-						<h3><a href="">服饰鞋帽</a><b></b></h3>
-						<div class="cat_detail none">
-							
-						</div>
-					</div>
-					
-					<div class="cat">
-						<h3><a href="">个护化妆</a><b></b></h3>
-						<div class="cat_detail none">
-							
-						</div>
-					</div>
-					
-					<div class="cat">
-						<h3><a href="">礼品箱包、钟表、珠宝</a><b></b></h3>
-						<div class="cat_detail none">
-							
-						</div>
-					</div>
-
-					<div class="cat">
-						<h3><a href="">运动健康</a><b></b></h3>
-						<div class="cat_detail none">
-							
-						</div>
-					</div>
-
-					<div class="cat">
-						<h3><a href="">汽车用品</a><b></b></h3>
-						<div class="cat_detail none">
-							
-						</div>
-					</div>
-					
-					<div class="cat">
-						<h3><a href="">母婴、玩具乐器</a><b></b></h3>
-						<div class="cat_detail none">
-							
-						</div>
-					</div>
-
-					<div class="cat">
-						<h3><a href="">食品饮料、保健食品</a><b></b></h3>
-						<div class="cat_detail none">
-							
-						</div>
-					</div>
-
-					<div class="cat">
-						<h3><a href="">彩票、旅行、充值、票务</a><b></b></h3>
-						<div class="cat_detail none">
-							
-						</div>
-					</div>
-
+					<?php endforeach; ?>
 				</div>
-
 			</div>
 			<!--  商品分类部分 end--> 
 
 			<div class="navitems fl">
 				<ul class="fl">
-					<li class="current"><a href="">首页</a></li>
+					<li class="current"><a href="<?php echo U('Index/index');?>">首页</a></li>
 					<li><a href="">电脑频道</a></li>
 					<li><a href="">家用电器</a></li>
 					<li><a href="">品牌大全</a></li>
 					<li><a href="">团购</a></li>
 					<li><a href="">积分商城</a></li>
-					<li><a href="">夺宝奇兵</a></li>
+					<li><a href="<?php echo U('Center/orderLst');?>">会员中心</a></li>
 				</ul>
 				<div class="right_corner fl"></div>
 			</div>
@@ -432,7 +189,31 @@
 	<!-- 头部 end-->
 	
 	<div style="clear:both;"></div>
-122121
+<script type="text/javascript">
+
+//Ajax获取最近浏览的商品
+var img_url="<?php echo C('IMG_URL')?>";
+$.ajax({
+	type: "get",
+	url: "<?php echo U('Goods/ajaxgetRecentlygoods');?>",
+	dataType: "json",
+	success: function(data){
+		
+		//把商品信息显示到页面
+		var str='';
+		var str_a='';
+		$(data).each(function(k,v){
+			str+='<li><a href="<?php echo U('Goods/goods/','',false);?>/goods_id/'+v.goods_id+'"><img src="'+img_url+v.sm_logo+'" alt="" /></a></li>';
+			str_a+='<dl><dt><a href="<?php echo U('Goods/goods/','',false);?>/goods_id/'+v.goods_id+'"><img src="'+img_url+v.sm_logo+'" alt="" /></a></dt><dd><a href="">'+v.goods_name+'</a></dd></dl>';
+		});
+		$('#go').html(str);
+		$('#liuluan').html(str_a);
+	}
+});
+</script>
+		<p class="news_non">【家造网：www.jiajoo.com 电话：400-838-2229】</p>
+			<div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1453102389647"><span class="news_share">分享到：</span><a href="<?php echo U('Article/newstext',array('id' => $res['id']));?>" class="bds_more" data-cmd="more"></a><a href="<?php echo U('Article/newstext',array('id' => $res['id']));?>" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="<?php echo U('Article/newstext',array('id' => $res['id']));?>" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="<?php echo U('Article/newstext',array('id' => $res['id']));?>" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="<?php echo U('Article/newstext',array('id' => $res['id']));?>" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="<?php echo U('Article/newstext',array('id' => $res['id']));?>" class="bds_t163" data-cmd="t163"></a></div>
+         <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","t163"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=86835285.js?cdnversion='+~(-new Date()/36e5)];</script>
 <div style="clear:both;"></div>
 
 	<!-- 底部导航 start -->
@@ -529,4 +310,23 @@
 	<!-- 底部版权 end -->
 
 </body>
+<script type="text/javascript">
+
+//AjaX判断登录状态
+$.ajax({
+	type: "get",
+	url: "<?php echo U('Member/ajaxChkLogin');?>",
+	dataType: "json",
+	success:function(data){
+		if(data.ok==1){
+			var html="您好！，"+data.email+"  <a href='<?php echo U('Member/logout');?>' style='cursor:pointer;'>[退出]</a>";
+		}else{
+			var html="您好!，欢迎来到京西！[<a href='<?php echo U('Member/login');?>'>登录</a>] [<a href='<?php echo U('Member/regist');?>'>免费注册</a>]";
+		}
+		$('#login').html(html);
+	}
+	
+});
+</script>
+
 </html>
