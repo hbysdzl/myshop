@@ -9,15 +9,7 @@ class LoginModel extends Model{
     public  $_login_validate=array(
         array('username','require','用户名不能为空',1),
         array('password','require','密码不能为空',1),
-        array('chkcode','require','验证码不能为空',1),
-        array('chkcode','chk_chkcode','验证码错误',1,'callback'),
     );
-
-    //验证用户提交的验证码
-    public function chk_chkcode($code){
-        $verify=new Verify();
-        return $verify->check($code);
-    }
 
     public function login(){
         //获取用户提交的用户名和密码

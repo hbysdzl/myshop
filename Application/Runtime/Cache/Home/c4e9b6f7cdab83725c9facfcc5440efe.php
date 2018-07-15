@@ -17,9 +17,12 @@
 	<link rel="stylesheet" href="/Public/Home/style/bottomnav.css" type="text/css">
 	<link rel="stylesheet" href="/Public/Home/style/footer.css" type="text/css">
 	<script type="text/javascript" src="/Public/Home/js/jquery-1.8.3.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
 	<script type="text/javascript" src="/Public/Home/js/jquery.form.js"></script>
 	<script type="text/javascript" src="/Public/Home/js/layer/layer.js"></script>
 	<script type="text/javascript" src="/Public/Home/js/header.js"></script>
+	
+    <script type="text/javascript" charset="utf-8" src="/Public/Home/js/gt.js"></script>
 	<?php foreach ($page_js as $k => $v): ?>
 	<script type="text/javascript" src="/Public/Home/js/<?php echo ($v); ?>.js"></script>
 	<?php endforeach; ?>
@@ -48,7 +51,11 @@
 
 	<!-- 内容 -->
 	
-
+<style>
+ .show {display: block;}
+ .hide {display: none;}
+ #notice {color: red;}
+</style>
 <!-- 登录主体部分start -->
 	<div class="login w990 bc mt10">
 		<div class="login_hd">
@@ -68,14 +75,17 @@
 							<input type="password" class="txt" name="password" />
 						</li>
 						<li>
-							<label for="">验证码：</label>
-							<input class="txt" type="text"  name="code" /><br />
+							<div style="float:left;padding-top:15px;">验证码：</div>
+							<div id="embed-captcha" style="padding-left:60px;"></div>
+	    					<p id="wait" class="show">正在加载验证码......</p>
+	    					<p id="notice" class="hide">请先完成验证</p>	
 						</li>
-						<li>
+						<!--  <li>
 							<label for="">&nbsp;</label>
 							<img onclick="this.src='<?php echo U('chkcode'); ?>#'+Math.random();" style="cursor:pointer;" src="<?php echo U('chkcode'); ?>" alt="" />
 							<span>看不清？<a onclick="$(this).parent().prev('img').trigger('click');" href="javascript:void(0);">换一张</a></span>
 						</li>
+						-->
 						<li>
 							<label for="">&nbsp;</label>
 							<input type="submit" value="" class="login_btn" />
@@ -172,7 +182,47 @@
 	</div>
 	<!-- 底部导航 end -->
 <script type="text/javascript">
-	//jqureyForm插件提交表单
+//极验验证码
+var handlerEmbed = function (captchaObj) {
+        $("#embed-submit").click(function (e) {
+            var validate = captchaObj.getValidate();
+            if (!validate) {
+                $("#notice")[0].className = "show";
+                setTimeout(function () {
+                    $("#notice")[0].className = "hide";
+                }, 2000);
+                e.preventDefault();
+            }
+        });
+        // 将验证码加到id为captcha的元素里，同时会有三个input的值：geetest_challenge, geetest_validate, geetest_seccode
+        captchaObj.appendTo("#embed-captcha");
+        captchaObj.onReady(function () {
+            $("#wait")[0].className = "hide";
+        });
+        // 更多接口参考：http://www.geetest.com/install/sections/idx-client-sdk.html
+    };
+	   $.ajax({
+	        // 获取id，challenge，success（是否启用failback）
+	        url: "<?php echo U('getverify','',false);?>/t/" + (new Date()).getTime(), // 加随机数防止缓存
+	        type: "get",
+	        dataType: "json",
+	        success: function (data) {
+	            console.log(data);
+	            // 使用initGeetest接口
+	            // 参数1：配置参数
+	            // 参数2：回调，回调的第一个参数验证码对象，之后可以使用它做appendTo之类的事件
+	            initGeetest({
+	                gt: data.gt,
+	                challenge: data.challenge,
+	                new_captcha: data.new_captcha,
+	                product: "embed", // 产品形式，包括：float，embed，popup。注意只对PC版验证码有效
+	                offline: !data.success // 表示用户后台检测极验服务器是否宕机，一般不需要关注
+	                // 更多配置参数请参见：http://www.geetest.com/install/sections/idx-client-sdk.html#config
+	            }, handlerEmbed);
+	        }
+	    });
+	
+	   //jqureyForm插件提交表单
 	$('form').submit(function(){
 		$(this).ajaxSubmit({
 			type:"post",
@@ -205,8 +255,8 @@
 		//阻止表单提交
 		return false;
 	});
-	
-	
+
+
 </script>
 	
 	<!-- 底部导航 end -->

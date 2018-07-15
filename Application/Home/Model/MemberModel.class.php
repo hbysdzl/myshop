@@ -30,9 +30,6 @@ class MemberModel extends Model{
             //array('email', 'email,', 'email格式不正确', 1),
             array('password', 'require', '密码不能为空', 1),
             array('password', '6,20', '密码必须是6-20位字符!', 1, 'length'),
-            array('code', 'require', '验证码不能为空', 1),
-            array('code', 'chk_code', '验证码不正确', 1, 'callback'),
-
     );
 
     //调用验证码类进行验证

@@ -26,4 +26,9 @@ return array(
     'MAIL_SMTP' => 'smtp.163.com',      // 邮件服务器的地址
     'MAIL_LOGINNAME' => 'hbdzlaa@163.com',//邮件账号
     'MAIL_PASSWORD' => 'duanzonglai123',//第三方授权码
+    
+    /*--极验验证码配置参数---*/
+    'ID'            =>  '5351be4905421a875048041b9e64ee74',
+    'KEY'           =>  'a54e385408af2c18bd5f8030d0c72a6d',
+
 );
