@@ -2,6 +2,48 @@
 use Think\Upload;
 use Behavior\ShowPageTraceBehavior;
 
+/*
+ * 自定义Api接口请求函数
+ * @$url:请求的地址
+ * @$data:请求所携带的参数信息
+ * @$method:请求方式
+ * @return :result(array);
+ * */
+ 
+function http_curl($url,$data=array(),$method='get'){
+    
+    if(!function_exists('curl_init')){
+        //如果该函数不存在则没有开启php扩展
+        echo "php扩展未开启";
+        die();
+    }
+    //1.打开会话
+    $ch=curl_init();
+    //2.设置参数信息
+    if($method=='post'){
+        //设置post请求
+        //curl_setopt()函数将为一个CURL会话设置选项。CURLOPT_POST参数是你想要的设置，true是这个选项给定的值
+        curl_setopt($ch,CURLOPT_POST,true);
+        //设置请求的参数
+        curl_setopt($ch,CURLOPT_POSTFIELDS,$data);
+    }else{
+        //get请求将参数直接放在url地址后面
+        $url.='&'.http_build_query($data);//将数组参数转换为请求字符串
+    }
+    //设置请求地址
+    curl_setopt($ch,CURLOPT_URL,$url);
+    //设置结果不输出
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
+    
+    //3.执行请求
+    $res=curl_exec($ch);
+    //4.关闭会话
+    curl_close($ch);
+    
+    //返回数组结果集
+    return json_decode($res);
+}
+
 //发送邮件
 function sendMail($to, $title, $content){
     require_once ('./Api/PHPMailer_v5.1/class.phpmailer.php');
