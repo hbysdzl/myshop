@@ -32,6 +32,10 @@ class MemberController extends BackController{
 
     public function test(){
        // var_dump(session('telcode'));
+       //$res=http_curl('http://www.api.com/index.php?m=home&c=User&a=login',array('username'=>'382709807@qq.com','password'=>'123456'));
+       $res=get_api_data(array('c'=>'User','a'=>'login','username'=>'382709807@qq.com','password'=>'123456'),$method='get');
+       var_dump($res);
+      
     }
     //会员注册
     public function regist(){
@@ -74,7 +78,7 @@ class MemberController extends BackController{
     public function login(){
         if (IS_POST){
             $model=D('Member');
-            //验证验证
+            //极验验证
            if(!$this->getCode()){
                $this->ajaxReturn(array('status'=>0,'error'=>'请先完成验证码验证'));
                die();
@@ -92,7 +96,7 @@ class MemberController extends BackController{
 
                 }
             }
-            //$this->error($model->getError());
+            
             $this->ajaxReturn(array('status'=>0,'error'=>$model->getError()));
         }
 

@@ -82,9 +82,35 @@ class MemberModel extends Model{
         $email=$this->email;
         $password=$this->password;
 
-        $user=$this->where(array('email'=>array('eq',$email)))->find();
-
-        if ($user){//判断账号是否存在
+        // $user=$this->where(array('email'=>array('eq',$email)))->find();
+        //调用自定义接口登录
+        $data=array(
+            'c'=>'User',
+            'a'=>'login',
+            'username'=>$email,
+            'password'=>$password
+        );
+        $res=get_api_data($data);
+        if($res['status']==0){
+            $this->error=$res['error'];
+            return false;
+        }
+        //保存用户信息
+        $user=$res['result'];
+        //将用户信息存入sissen
+        session('id',$user['id']);
+        session('email',$user['email']);
+        session('jyz',$user['jyz']);
+        //获取当前登录会员的级别其折扣率
+        $ml=M('NumberLevel')->field('level_id,rate')->where("{$user['jyz']} between bottom_num and top_num")->find();
+        session('level_id',$ml['level_id']);//当前会员的级别
+        session('rate',$ml['rate']/100);//当前会员级别的折扣率
+        //将购物中的COOKIE数据转移到数据库
+        $cartModel=D('Cart');
+        $cartModel->MoveDataDb();
+        return true;
+       
+       /* if ($user){//判断账号是否存在
 
             if (empty($user['email_code'])){//判断是否通过email验证
                     
@@ -112,6 +138,6 @@ class MemberModel extends Model{
             }
         }else {
             $this->error="账号不存在";
-        }
+        }*/
     }
 }

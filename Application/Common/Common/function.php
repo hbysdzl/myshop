@@ -2,6 +2,37 @@
 use Think\Upload;
 use Behavior\ShowPageTraceBehavior;
 
+/**
+ * 调用接口（通过http_curl）进行数据操作
+ * @param array  $data    请求携带的参数
+ * @param string  $method    请求方式：get/post
+ * @return array
+ * @author 段宗来  <xcoolcc@gmail.com>
+ */
+function get_api_data($data=array(),$method='get'){
+    
+    //根据实际情况生成url地址，如果未指定具体的接口的控制器和方法则使用与目前同名的控制器和方法
+    if(!$data['c']){
+        $data['c']=CONTROLLER_NAME;
+    }
+    if(!$data['a']){
+        $data['a']=ACTION_NAME;
+    }
+    //如果当前接口不是自定义接口则指定具体的接口地址
+    if($data['url']){
+        $url=$data['url'];
+    }else{
+        $url="http://www.api.com/index.php?m=home&c=".$data['c']."&a=".$data['a'];
+    }
+    //将控制器方法参数删除
+    unset($data['c']);
+    unset($data['a']);
+    unset($data['url']);
+    //开始请求
+    $res=http_curl($url,$data,$method='get');
+    return $res;
+} 
+
 /*
  * 自定义Api接口请求函数
  * @$url:请求的地址
@@ -41,7 +72,7 @@ function http_curl($url,$data=array(),$method='get'){
     curl_close($ch);
     
     //返回数组结果集
-    return json_decode($res);
+    return json_decode($res,true);
 }
 
 //发送邮件
