@@ -1,0 +1,2 @@
+<?php die('forbidden'); ?>
+{"appid":"1107044392","appkey":"5LC0HTgTrlamHUKL","callback":"http://www.shop.com/home/qq/callback","scope":"get_user_info","errorReport":true,"storageType":"file","host":"localhost","user":"root","password":"root","database":"test"}
