@@ -1,0 +1,60 @@
+[ 2018-07-21T22:49:52+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003305s ]
+SQL: SHOW COLUMNS FROM `php2018_goods` [ RunTime:0.012600s ]
+SQL: SELECT `goods_id`,`goods_name`,`promote_price`,`logo` FROM `php2018_goods` WHERE ( `is_promote` = 1 ) AND ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `promote_start_time` < 1532184592 ) AND ( `promote_end_time` > 1532184592 ) ORDER BY sort_num  [ RunTime:0.001285s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`logo` FROM `php2018_goods` WHERE ( `is_hot` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_on_sale` = 1 ) ORDER BY sort_num  [ RunTime:0.000847s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`logo` FROM `php2018_goods` WHERE ( `is_best` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_on_sale` = 1 ) ORDER BY sort_num  [ RunTime:0.000644s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`logo` FROM `php2018_goods` WHERE ( `is_new` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_on_sale` = 1 ) ORDER BY sort_num  [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `php2018_goodscategory` [ RunTime:0.001474s ]
+SQL: SELECT * FROM `php2018_goodscategory` WHERE ( parent_id=20 )  [ RunTime:0.000636s ]
+SQL: SELECT `goods_id`,`goods_name`,`shop_price`,`logo` FROM `php2018_goods` WHERE ( `is_best` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_on_sale` = 1 ) AND ( `cat_id` IN ('13','21','22','23','25','26','27','28','29','30','31','33','35') ) ORDER BY sort_num  [ RunTime:0.000742s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000314s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `php2018_goodscategory` [ RunTime:0.001218s ]
+SQL: SELECT * FROM `php2018_goodscategory`  [ RunTime:0.000711s ]
+NOTIC: [8] Undefined index: children D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [8] Undefined index: children D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 158 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 158 行.
+NOTIC: [8] Undefined index: children D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [8] Undefined index: children D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [8] Undefined index: children D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [8] Undefined index: children D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [8] Undefined index: children D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [8] Undefined index: children D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [8] Undefined index: children D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [8] Undefined index: children D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [8] Undefined index: children D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [8] Undefined index: children D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [8] Undefined index: children D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [8] Undefined index: children D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [8] Undefined index: children D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\server\Web\myshop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 163 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.141650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.141727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021997s ]
+
