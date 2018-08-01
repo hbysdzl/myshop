@@ -17,9 +17,12 @@
 	<link rel="stylesheet" href="/Public/Home/style/bottomnav.css" type="text/css">
 	<link rel="stylesheet" href="/Public/Home/style/footer.css" type="text/css">
 	<script type="text/javascript" src="/Public/Home/js/jquery-1.8.3.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
 	<script type="text/javascript" src="/Public/Home/js/jquery.form.js"></script>
 	<script type="text/javascript" src="/Public/Home/js/layer/layer.js"></script>
 	<script type="text/javascript" src="/Public/Home/js/header.js"></script>
+	
+    <script type="text/javascript" charset="utf-8" src="/Public/Home/js/gt.js"></script>
 	<?php foreach ($page_js as $k => $v): ?>
 	<script type="text/javascript" src="/Public/Home/js/<?php echo ($v); ?>.js"></script>
 	<?php endforeach; ?>
@@ -178,7 +181,7 @@ $catModel = D('Goodscategory'); $catData = $catModel->getNavCatData(); ?>
 					<li><a href="">品牌大全</a></li>
 					<li><a href="">团购</a></li>
 					<li><a href="">积分商城</a></li>
-					<li><a href="">夺宝奇兵</a></li>
+					<li><a href="<?php echo U('Center/orderLst');?>">会员中心</a></li>
 				</ul>
 				<div class="right_corner fl"></div>
 			</div>
