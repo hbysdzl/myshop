@@ -11,7 +11,7 @@ return array(
     'TMPL_PARSE_STRING'=>array(
         '__CSS__'  =>   '/Application/Admin/Public/Styles',
         '__IMG__'  =>   '/Application/Admin/Public/images',
-        '__JS__'  =>    '/Application/Admin/Public/js',
+        '__JS__'  =>    '/Application/Admin/Public/Js',
         
     ),
     
