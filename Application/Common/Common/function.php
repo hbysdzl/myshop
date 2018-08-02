@@ -22,7 +22,7 @@ function get_api_data($data=array(),$method='get'){
     if($data['url']){
         $url=$data['url'];
     }else{
-        $url="http://www.api.com/index.php?m=home&c=".$data['c']."&a=".$data['a'];
+        $url="http://api.jaojoozn.com/index.php?m=home&c=".$data['c']."&a=".$data['a'];
     }
     //将控制器方法参数删除
     unset($data['c']);
