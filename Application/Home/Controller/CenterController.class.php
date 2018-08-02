@@ -13,7 +13,7 @@ class CenterController extends BackController{
             
             //判断如果会员未登录则调回登陆页面
             if(!session('id')){
-                $this->success('请先登陆',U('Member/Login'));
+                $this->success('请先登陆',U('Member/login'));
                 return ;
             }
             

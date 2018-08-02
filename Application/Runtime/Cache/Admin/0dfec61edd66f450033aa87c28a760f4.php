@@ -6,10 +6,10 @@
 <link href="/Application/Admin/Public/Styles/general.css" rel="stylesheet" type="text/css" />
 <link href="/Application/Admin/Public/Styles/main.css" rel="stylesheet" type="text/css" />
 <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
-<script type="text/javascript" charset="utf-8" src="/Application/Admin/Public/js/gt.js"></script>
-<script type="text/javascript" src="/Application/Admin/Public/js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="/Application/Admin/Public/js/jquery.form.js"></script>
-<script type="text/javascript" charset="utf-8" src="/Application/Admin/Public/js/layer/layer.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Application/Admin/Public/Js/gt.js"></script>
+<script type="text/javascript" src="/Application/Admin/Public/Js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Application/Admin/Public/Js/jquery.form.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Application/Admin/Public/Js/layer/layer.js"></script>
 <style>
  .show {display: block;}
  .hide {display: none;}

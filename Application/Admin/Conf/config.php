@@ -10,7 +10,7 @@ return array(
     /*--自定义静态文件资源目录--*/
     'TMPL_PARSE_STRING'=>array(
         '__CSS__'  =>   '/Application/Admin/Public/Styles',
-        '__IMG__'  =>   '/Application/Admin/Public/images',
+        '__IMG__'  =>   '/Application/Admin/Public/Images',
         '__JS__'  =>     '/Application/Admin/Public/Js',
         
     ),
