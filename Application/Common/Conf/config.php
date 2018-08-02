@@ -4,8 +4,8 @@ return array(
     'DB_TYPE'               =>  'mysqli',     // 数据库类型
     'DB_HOST'               =>  '127.0.0.1', // 服务器地址
     'DB_NAME'               =>  'php2018',          // 数据库名
-    'DB_USER'               =>  'root',      // 用户名
-    'DB_PWD'                =>  'root',          // 密码
+    'DB_USER'               =>  'lai',      // 用户名
+    'DB_PWD'                =>  '123456',          // 密码
     'DB_PORT'               =>  '3306',        // 端口
     'DB_PREFIX'             =>  'php2018_',    // 数据库表前缀
     //存放文件的目录
